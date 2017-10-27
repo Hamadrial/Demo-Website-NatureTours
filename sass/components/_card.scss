@@ -1,6 +1,6 @@
 .card {
 
-  // FUNTIONALITY
+  ////////////// FUNCTIONALITY /////////////
   position: relative;
   height: 52rem;
   perspective: 150rem;
@@ -52,6 +52,9 @@
   // FRONT SIDE STYLING
   &__picture {
     height: 23rem;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+
     background-size: cover;
     background-blend-mode: screen;
 
@@ -71,6 +74,7 @@
     }
   }
 
+  ////////////// HEADING /////////////
   &__heading {
     position: absolute;
     top: 12rem;
@@ -110,6 +114,7 @@
     }
   }
 
+  ////////////// DETAILS /////////////
   &__details {
     padding: 3rem;
 
@@ -131,7 +136,7 @@
     }
   }
 
-  // BACK SIDE STYLING
+  ////////////// BACK SIDE STYLING /////////////
   &__cta {
     position: absolute;
     top: 50%;
