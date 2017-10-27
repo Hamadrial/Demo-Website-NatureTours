@@ -15,6 +15,41 @@
 </head>
 
 <body>
+  <!-- NAVIGATION -->
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#about" class="navigation__link"><span>01</span>About Natours</a>
+        </li>
+
+        <li class="navigation__item">
+          <a href="#features" class="navigation__link"><span>02</span>Your benefits</a>
+        </li>
+
+        <li class="navigation__item">
+          <a href="#tours" class="navigation__link"><span>03</span>Popular tours</a>
+        </li>
+
+        <li class="navigation__item">
+          <a href="#stories" class="navigation__link"><span>04</span>Stories</a>
+        </li>
+
+        <li class="navigation__item">
+          <a href="#book" class="navigation__link"><span>05</span>Book now</a>
+        </li>
+      </ul>
+    </nav>
+  </div> <!-- /.navigation -->
+  <!-- END NAVIGATION -->
 
   <!-- HEADER SECTION -->
   <header class="header">
@@ -35,7 +70,7 @@
 
   <!-- MAIN SECTION -->
   <main>
-    <section class="section-about">
+    <section class="section-about" id="about">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">
           Exciting tours for adventurous people
@@ -70,7 +105,7 @@
   <!-- END MAIN SECTION -->
 
   <!-- SECTION FEATURES -->
-  <section class="section-features">
+  <section class="section-features" id="features">
     <div class="row">
       <div class="col-1-of-4">
         <div class="feature-box">
@@ -124,7 +159,7 @@
   <!-- END SECTION FEATURES -->
 
   <!-- SECTION TOURS -->
-  <section class="section-tours">
+  <section class="section-tours" id="tours">
     <div class="u-center-text">
       <h2 class="heading-secondary u-margin-bottom-big">
         Most popular tours
@@ -255,7 +290,7 @@
   <!-- END SECTION TOURS -->
 
   <!-- SECTION STORIES -->
-  <section class="section-stories">
+  <section class="section-stories" id="stories">
     <div class="bg-video">
       <video class="bg-video__content" autoplay muted loop>
         <source src="img/video.mp4" type="video/mp4">
@@ -319,7 +354,7 @@
   <!-- END SECTION STORIES -->
 
   <!-- SECTION BOOKING -->
-  <section class="section-book">
+  <section class="section-book" id="book">
     <div class="row">
       <div class="book">
         <div class="book__form">
@@ -408,6 +443,14 @@
       </div> <!-- /.col-1-of-2 -->
     </div> <!-- /.row -->
   </footer>
+
+  <!-- POP UP -->
+  <div class="popup">
+    <div class="popup__content">
+      POPUP
+    </div>
+  </div>
+  <!-- END POP UP -->
 
 </body>
 

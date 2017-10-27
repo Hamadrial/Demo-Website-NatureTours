@@ -80,10 +80,7 @@
 
     &::after {
       content: "";
-      position: absolute;
-      top: 50%;
-      left:50%;
-      transform: translate(-50%, -50%);
+      @include positionCenter;
       display: block;
       height: 1.3rem;
       width: 1.3rem;
