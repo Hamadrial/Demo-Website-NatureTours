@@ -17,6 +17,16 @@
     // For icon
     text-align: center;
     cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 3rem;
+      right: 3rem;
+    }
+
+    @include respond(phone) {
+      height: 5rem;
+      width: 5rem;
+    }
   }
 
   &__background {
@@ -31,6 +41,16 @@
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
+
+    @include respond(tab-port) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
+
+    @include respond(phone) {
+      height: 4.1rem;
+      width: 4.1rem;
+    }
   }
 
   &__nav {
@@ -102,6 +122,10 @@
     position: relative;
     margin-top: 3.5rem;
 
+    @include respond(phone) {
+      margin-top: 2.5rem;
+    }
+
     &,
     &::before,
     &::after {
@@ -110,6 +134,10 @@
       height: 2px;
 
       background-color: $color-grey-dark-3;
+
+      @include respond(phone) {
+        width: 2rem;
+      }
     }
 
     &::before,

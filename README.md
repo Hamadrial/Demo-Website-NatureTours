@@ -24,7 +24,7 @@ Click "Clone or download" button and download the .zip file.  Extract the conten
 
 #### Built With
 
-*    [node-sass](https://github.com/sass/node-sass) - Node.js bindings to libsass.
+* [node-sass](https://github.com/sass/node-sass) - Node.js bindings to libsass.
 
 
 
