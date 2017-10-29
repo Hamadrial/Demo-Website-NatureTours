@@ -17,6 +17,7 @@
     display: table;
 
     width: 75%;
+    max-height: 20rem;
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, .2);
     border-radius: 3px;
@@ -30,14 +31,30 @@
   &__left {
     display: table-cell;
     width: 33.333333%;
+
+    @include respond(tab-port) {
+      display: none;
+      visibility: hidden;
+    }
   }
 
   &__right {
     display: table-cell;
     vertical-align: middle;
     width: 66.6666667%;
-    padding: 3rem 5rem;
+    padding: 3rem 3rem;
     position: relative;
+
+    .heading-secondary {
+      padding-left: 0;
+    }
+
+    @include respond(tab-port) {
+      .btn--green {
+        font-size: 1.5rem;
+        padding: 1.5rem 3rem;
+      }
+    }
   }
 
   &__img {
@@ -47,7 +64,7 @@
 
   &__text {
     margin-bottom: 4rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     -moz-column-count: 2;
     -moz-column-gap: 4rem;
     -moz-column-rule: 1px solid $color-grey-light-2;
@@ -58,6 +75,15 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+    }
+
+    @include respond(phone) {
+      -moz-column-count: 1;
+      column-count: 1;
+    }
   }
 
   // Select the id popup
