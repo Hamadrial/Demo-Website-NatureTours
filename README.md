@@ -11,15 +11,22 @@ Checkout this repo, install dependencies, then start the gulp process with the f
 > git clone https://github.com/Hamadrial/Natours.git
 > cd Natours
 > npm install
-> npm run watch:sass
 ```
+Install [live-server](https://www.npmjs.com/package/live-server) - A little development server with live reload capability.
+```
+> npm run start
+```
+
 
 #### Not Familiar with Git?
 Click "Clone or download" button and download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
 
 ```
 > npm install
-> npm run watch:sass
+```
+Install [live-server](https://www.npmjs.com/package/live-server) - A little development server with live reload capability.
+```
+> npm run start
 ```
 
 #### Built With
