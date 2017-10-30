@@ -11,7 +11,7 @@ Checkout this repo, install dependencies, then start the gulp process with the f
 > git clone https://github.com/Hamadrial/Natours.git
 > cd Natours
 > npm install
-> npm run compile:sass
+> npm run watch:sass
 ```
 
 #### Not Familiar with Git?
@@ -19,7 +19,7 @@ Click "Clone or download" button and download the .zip file.  Extract the conten
 
 ```
 > npm install
-> npm npm run compile:sass
+> npm run watch:sass
 ```
 
 #### Built With
