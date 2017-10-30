@@ -12,6 +12,12 @@
 
   background-color: rgba($color-black, .8);
 
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-black, .3);
+  }
+
   &__content {
     @include positionCenter;
     display: table;
@@ -64,7 +70,7 @@
 
   &__text {
     margin-bottom: 4rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     -moz-column-count: 2;
     -moz-column-gap: 4rem;
     -moz-column-rule: 1px solid $color-grey-light-2;
